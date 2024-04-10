@@ -18,6 +18,21 @@ if __name__ == "__main__":
         return outstring
 
     def decode(astring):
+        ostring = ""
+        for each in astring:
+            newint = int
+            if 3 < int(each) <= 9:
+                newint = int(each) - 3
+            else:
+                if each == "0":
+                    newint = 7
+                if each == "1":
+                    newint = 8
+                if each == "2":
+                    newint = 9
+            ostring += str(newint)
+        return ostring
+
         pass
 
     while True:
